@@ -5,19 +5,11 @@
 - Line Messaging API
 
 
-## 仕様
-
-### 環境変数
+## 環境変数
 <p>複製して変更がしやすいよう、スプレッドシート上に変数を定義</p>
 <img src="https://user-images.githubusercontent.com/39648121/63211191-d7853b00-c12e-11e9-8429-2f93b6ca2262.png" width="50%">
 
-### 使い方
-1. ユーザーがLineのリッチメニュー上から面談開始時間を選択
-2. 選択時間を元にカレンダーに予定を記録
-3. 前日にカレンダーの予定からリマインドメッセージを送信
-
-
-## スクリーンショット
+## 仕様
 ### 1. ユーザーがLineのリッチメニュー上から面談開始時間を選択
 <img src="https://user-images.githubusercontent.com/39648121/63211177-c5a39800-c12e-11e9-9121-48aaea6fa697.png" width="50%">
 <img src="https://user-images.githubusercontent.com/39648121/63211178-c5a39800-c12e-11e9-824e-0fcb70169d72.png" width="50%">
