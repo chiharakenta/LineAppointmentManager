@@ -14,7 +14,7 @@ function getUserName(userId) {
   var url = 'https://api.line.me/v2/bot/profile/' + userId;
   var options = {
     "headers": {
-      "Authorization" : "Bearer " + token
+      "Authorization" : "Bearer " + TOKEN
     }
   }
   var response = UrlFetchApp.fetch(url, options);
@@ -30,5 +30,5 @@ function createAppointment(userId, userName, dateTime) {
   var options = {
     "description": userId
   }
-  calender.createEvent(title, startTime, endTime, options);
+  return CALENDER.createEvent(title, startTime, endTime, options);
 }

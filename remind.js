@@ -2,8 +2,7 @@
 function remindAppointment() {
   var now = new Date();
   var tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
-  var events = calender.getEventsForDay(tomorrow);
-  
+  var events = CALENDER.getEventsForDay(tomorrow);
   var length = events.length;
   
   for(var i=0; i<length; i++) {
@@ -26,7 +25,7 @@ function pushMessage(userId, message) {
   var url = "https://api.line.me/v2/bot/message/push";
   var headers = {
     "Content-Type" : "application/json; charset=UTF-8",
-    'Authorization': 'Bearer ' + token,
+    'Authorization': 'Bearer ' + TOKEN,
   };
   var postData = {
     "to": userId,

@@ -16,7 +16,7 @@ function createRichMenu() {
   var url = "https://api.line.me/v2/bot/richmenu";
   var headers = {
     "Content-Type": "application/json; charset=UTF-8",
-    'Authorization': 'Bearer ' + token,
+    'Authorization': 'Bearer ' + TOKEN,
   };
   var postData = {
     "size": {
@@ -55,9 +55,9 @@ function uploadImage(richMenuId) {
   var url = "https://api.line.me/v2/bot/richmenu/" + richMenuId + "/content";
   var headers = {
     "Content-Type": "image/png",
-    'Authorization': 'Bearer ' + token,
+    'Authorization': 'Bearer ' + TOKEN,
   };
-  var imageFile = DriveApp.getFileById(imageFileId).getBlob();
+  var imageFile = DriveApp.getFileById(IMAGE_FILE_ID).getBlob();
   
   var options = {
     "method": "post",
@@ -70,7 +70,7 @@ function uploadImage(richMenuId) {
 function setDefaultRichMenu(richMenuId){
   var url = "https://api.line.me/v2/bot/user/all/richmenu/" + richMenuId;
   var headers = {
-    'Authorization': 'Bearer ' + token
+    'Authorization': 'Bearer ' + TOKEN
   }
   var options = {
     "method": "post",
@@ -94,7 +94,7 @@ function getMenuList() {
   var url = "https://api.line.me/v2/bot/richmenu/list";
   var headers = {
     "Content-Type": "application/json; charset=UTF-8",
-    'Authorization': 'Bearer ' + token,
+    'Authorization': 'Bearer ' + TOKEN,
   };
   var options = {
     "headers": headers
@@ -106,7 +106,7 @@ function getMenuList() {
 function deleteRichMenu(richMenuId) {
   var url = "https://api.line.me/v2/bot/richmenu/" + richMenuId;
   var headers = {
-    'Authorization': 'Bearer ' + token,
+    'Authorization': 'Bearer ' + TOKEN,
     "Content-Type": "image/png",
   };
   var options = {
