@@ -57,6 +57,7 @@ function createRichMenu() {
   return UrlFetchApp.fetch(url, options);
 }
 
+
 /*
 関数概要：リッチメニューで使用するボタンのアップロード
 引数：richMenuId リッチメニューを識別するid
@@ -110,6 +111,7 @@ function deleteAllRichMenus() {
     deleteRichMenuById(richMenuId);
   }
 }
+
 
 /*
 関数概要：現在作成されているリッチメニューを全て取得

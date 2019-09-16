@@ -23,6 +23,7 @@ function remindAppointment() {
   }
 }
 
+
 /*
 関数概要：ユーザーにLINEでメッセージ送信
 引数：userId: LINEのユーザーID, message: 送信したいメッセージ
