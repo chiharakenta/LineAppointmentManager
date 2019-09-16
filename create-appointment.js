@@ -5,10 +5,10 @@
 function doPost(e) {
   var params = JSON.parse(e.postData.getDataAsString());
   var event = params.events[0];
-  var storeId = event.postback.data.replace('storeId=', ''); //LINEから送られてきたイベントの種類を識別するID
+  var data = event.postback.data; //LINEから送られてきたイベントの種類を識別するデータ
 
   //受け取ったイベントがリッチメニューからの時間送信だった場合実行
-  if(storeId == '12345') {
+  if(data == 'appointment') {
     var userId = event.source.userId
     var userName = getUserNameById(userId);
     var dateTime = event.postback.params.datetime;

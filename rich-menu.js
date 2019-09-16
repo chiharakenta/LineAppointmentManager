@@ -43,7 +43,7 @@ function createRichMenu() {
         "action": {
           "type":"datetimepicker",
           "label":"面談開始時間を選択",
-          "data": "storeId=12345",
+          "data": "appointment",
           "mode":"datetime"
         }
       }
